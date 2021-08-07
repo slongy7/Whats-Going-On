@@ -2,6 +2,7 @@ const Sequelize = require('sequelize');
 require('dotenv').config();
 
 let sequelize;
+console.log(process.env)
 
 if (process.env.JAWSDB_URL) {
     sequelize = new Sequelize(process.env.JAWSDB_URL);
@@ -14,10 +15,17 @@ if (process.env.JAWSDB_URL) {
             {
                 host: 'localhost',
                 dialect: 'mysql',
-                port: 3001
+                port: 3306
             }
         );
     }
 
-
+try {
+    sequelize.authenticate();
+    console.log('it connected')
+}
+catch {
+    console.log('error')
+}
+    
 module.exports = sequelize;

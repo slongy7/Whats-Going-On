@@ -1,4 +1,4 @@
-const router = requires('express').router();
+const router = require('express').router();
 
 router.get('/', async (req, res) => {
     res.render('homepage');
