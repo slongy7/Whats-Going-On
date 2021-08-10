@@ -6,15 +6,31 @@ const routes = require('./controllers');
 const app = express();
 const hbs = exphbs.create({});
 const session = require('express-session');
-const passport = require('passport');
-const bodyParser = require('body-parser');
+const passport = require('passport');  
+const bodyParser = require('body-parser');  //research body-parser
 const env = require('dotenv');
+
+const PORT = process.env.PORT || 3001;
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+app.use(express.json());
+
+
+app.use(express.urlencoded({ extended: true }));
+app.use(routes);
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(require('./controllers/homeRoutes'));
+
+sequelize.sync({ force: true }).then(() => {
+    app.listen(PORT, () => console.log('Now listening'));
+  });
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 app.use(session({
-  secret: 'keyboard cat',
+  secret: 'keyboard cat', //research this
   resave: true,
   saveUninitialized: true
 }));
