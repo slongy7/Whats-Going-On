@@ -1,6 +1,6 @@
 const axios = require("axios");
 require('dotenv').config();
-const { Business } = require('./models/index');
+const { Business } = require('../models/index');
 //create variables from user input to create search
 
 
