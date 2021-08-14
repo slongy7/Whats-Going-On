@@ -6,10 +6,9 @@ class Business extends Model { }
 Business.init(
     {
         id: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING(100),
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true,
         },
         name: {
             type: DataTypes.STRING(100),
@@ -26,8 +25,8 @@ Business.init(
             type: DataTypes.INTEGER(100),
             allowNull: false,
         },
-        type: {
-            type: DataTypes.INTEGER(100),
+        category: {
+            type: DataTypes.STRING(100),
             allowNull: false,
         }
     },
@@ -35,7 +34,7 @@ Business.init(
         sequelize,
         timestamps: false,
         freezeTableName: true,
-        tableName: 'BUSINESS',
+        tableName: 'business',
         underscored: true,
         modelName: 'business',
     }
