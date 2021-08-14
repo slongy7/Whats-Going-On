@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Business } = require('../models/index');
-const { findRestList } = require('../apiPull');
+const { findRestList } = require('../utils/apiPull');
 
 
 router.get('/', async (req, res) => {
