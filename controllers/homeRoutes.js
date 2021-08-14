@@ -1,6 +1,10 @@
 const router = require('express').Router();
+const { Business } = require('../models/index');
+const { findRestList } = require('../apiPull');
+
 
 router.get('/', async (req, res) => {
+    findRestList('columbus', 'bar');
     res.render('homepage');
 });
 
@@ -9,4 +13,5 @@ router.get('/login', async (req, res) => {
     
 });
 
-module.exports = router;
+module.exports = { router, findRestList};
+
