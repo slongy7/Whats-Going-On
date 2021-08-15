@@ -10,45 +10,61 @@
 </head>
 
 <body>
-<select class="form-select" multiple aria-label="Is this location crowded?">
-  <option selected>Is this location crowded?</option>
-  <option value="1">Crowded</option>
-  <option value="2">Not Crowded</option>
+<form class="add-form">
+<div>
+<label>Is this location crowded?</label>
+</div>
+<select class="form-select" id="crowded" multiple aria-label="Is this location crowded?">
+  <option value="Crowded">Crowded</option>
+  <option value="Not Crowded">Not Crowded</option>
 </select>
 
-<select class="form-select" multiple aria-label="Are people wearing masks?">
-  <option selected>Are people wearing masks?</option>
-  <option value="1">Masks</option>
-  <option value="2">No Masks</option>
+<div>
+<label>Are people wearing masks?</label>
+</div>
+<select id='masks' class="form-select" multiple aria-label="Are people wearing masks?">
+  <option value="Masks">Masks</option>
+  <option value="No Masks">No Masks</option>
 </select>
 
-<select class="form-select" multiple aria-label="Is there live entertainment?">
-  <option selected>Is there live entertainment?</option>
-  <option value="1">Yes</option>
-  <option value="2">No</option>
+<div>
+<label>Is there live entertainment?</label>
+</div>
+<select id='entertainment' class="form-select" multiple aria-label="Is there live entertainment?">
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
 </select>
 
-<select class="form-select" multiple aria-label="Are there food and drink specials?">
-  <option selected>Are there food and drink specials?</option>
-  <option value="1">Yes</option>
-  <option value="2">No</option>
+<div>
+<label>Are there food and drink specials?</label>
+</div>
+<select id='specials' class="form-select" multiple aria-label="Are there food and drink specials?">
+  <option value="Yes">Yes</option>
+  <option value="No">No</option>
 </select>
 
-<select class="form-select" multiple aria-label="Are the restrooms clean?">
-  <option selected>Are the restrooms clean?</option>
-  <option value="1">Yes</option>
-  <option value="2">Moderate</option>
-  <option value="3">No</option>
+<div>
+<label>Are the restrooms clean?</label>
+</div>
+<select id='quality' class="form-select" multiple aria-label="Are the restrooms clean?">
+  <option value="Yes">Yes</option>
+  <option value="Moderately">Moderately</option>
+  <option value="No">No</option>
 </select>
+
+<br></br>
 
 <div class="form-floating">
-  <textarea class="form-control" placeholder="Comments" id="floatingTextarea"></textarea>
+  <textarea id='comments' class="form-control" placeholder="Comments"></textarea>
   <label for="floatingTextarea"></label>
-  <button type="button" class="btn btn-primary btn-lg"><a href="/login">Make a Post</a></button>
+    <div class="add-post">
+  <button type="submit" class="btn btn-primary btn-lg"><a>Make a Post</a></button>
+    </div>
 </div>
-    
+    </form>
 
 </body>
 
+<script src="../js/add-post.js"></script>
 
 </html>
