@@ -35,9 +35,6 @@ User.init(
         pw: {
             type: DataTypes.STRING(30),
             allowNull: false,
-            validate: {
-                len: [30],
-            }
         }
     },
     {
