@@ -12,39 +12,39 @@ Post.init(
             autoIncrement: true,
         },
         crowded: {
-            type: DataTypes.BOOLEAN,
+            type: DataTypes.STRING,
         },
         masks: {
-            type: DataTypes.BOOLEAN,
+            type: DataTypes.STRING,
         },
         entertainment: {
-            type: DataTypes.BOOLEAN,
+            type: DataTypes.STRING,
         },
         specials: {
             type: DataTypes.STRING(100),
         },
         quality : {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
         },
         addComment: {
             type: DataTypes.STRING(100),
         },
-        busId: {
-            type: DataTypes.STRING(100),
-            allowNull: false,
-            references: {
-                model: 'BUSINESS',
-                key: 'id',
-            }
-        },
-        userId: {
-            type: DataTypes.INTEGER(100),
-            allowNull: false,
-            references: {
-                model: 'USER',
-                key: 'id',
-            }
-        },
+        // busId: {
+        //     type: DataTypes.STRING(100),
+        //     allowNull: false,
+        //     references: {
+        //         model: 'BUSINESS',
+        //         key: 'id',
+        //     }
+        // },
+        // userId: {
+        //     type: DataTypes.INTEGER(100),
+        //     allowNull: false,
+        //     references: {
+        //         model: 'USER',
+        //         key: 'id',
+        //     }
+        // },
     },
     {
         sequelize,
