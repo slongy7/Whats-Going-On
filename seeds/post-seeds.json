@@ -1,0 +1,50 @@
+[
+    {
+      "crowded": "Crowded",
+      "masks": "No Masks",
+      "entertainment": "yes",
+      "specials": "yes",
+      "quality": 4,
+      "addComment": "great happy hour!",
+      "business": "Sacred Palm"
+    },
+
+    {
+        "crowded": "Not Crowded",
+        "masks": "Masks",
+        "entertainment": "yes",
+        "specials": "no",
+        "quality": 5,
+        "addComment": "love their beer!",
+        "business": "Terrace Bar"
+      },
+
+      {
+        "crowded": "Crowded",
+        "masks": "Masks",
+        "entertainment": "no",
+        "specials": "yes",
+        "quality": 3,
+        "addComment": "great atmosphere",
+        "business": "The Alibi Bourbon and Cocktail Lounge"
+      },
+
+      {
+        "crowded": "Crowded",
+        "masks": "Masks",
+        "entertainment": "no",
+        "specials": "no",
+        "quality": 3,
+        "addComment": "love their food!",
+        "business": "High Bank Distillery"
+      },
+      {
+        "crowded": "Crowded",
+        "masks": "No Masks",
+        "entertainment": "no",
+        "specials": "Yes",
+        "quality": 4,
+        "addComment": "the best cocktails!",
+        "business": "Two Truths"
+      }
+    ]
