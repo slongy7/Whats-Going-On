@@ -25,15 +25,27 @@ Business.init(
             type: DataTypes.INTEGER(100),
             allowNull: false,
         },
+        phone: {
+            type: DataTypes.STRING
+        },
         category: {
             type: DataTypes.STRING(100),
             allowNull: false,
+        },
+        image: {
+            type: DataTypes.STRING
+        },
+        link: {
+            type: DataTypes.STRING,
+            allowNull: false
+        },
+        isOpen: {
+            type: DataTypes.BOOLEAN
         }
     },
     {
         sequelize,
         timestamps: false,
-        freezeTableName: true,
         tableName: 'business',
         underscored: true,
         modelName: 'business',

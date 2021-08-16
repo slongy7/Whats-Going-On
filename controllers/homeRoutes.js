@@ -11,7 +11,11 @@ router.get('/', async (req, res) => {
             'id',
             'name',
             'address',
-            'category'
+            'category',
+            'phone',
+            'image',
+            'link',
+            'isOpen'
         ]
     }).then(dbBusinessData => {
         const businesses = dbBusinessData.map(business => business.get({plain: true}));

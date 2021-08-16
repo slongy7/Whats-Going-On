@@ -11,25 +11,14 @@
 </head>
 
 <body>
-    <button id='btn' type="button" class="btn btn-primary btn-lg"><a href="/login">Log-In</a></button>
 
     {{#each businesses as |business|}}
 
     {{> business-info business }}
-    {{!-- <h1 id='hello'>Business</h1>
-
-    <div id='list'>
-    <ul class='location'>
-        {{ location }}
-        <li>{{ businesses.name }}</li>
-        <li>{{ businesses.address }}</li>
-        <li>{{ businesses.category }}</li>
-        <button type="button" class="btn btn-primary btn-lg"><a href="/post">Post</a></button>
-    </ul>
-    </div> --}}
+    
    
     {{else}}
-    <h6 class="pb-4 has-text-centered is-italic">there are currently no posts</h6>
+    <h6 class="pb-4 has-text-centered is-italic">BusinessDataLoading...</h6>
     {{/each}}
 </body>
 
