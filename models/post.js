@@ -11,7 +11,7 @@ Post.init(
             primaryKey: true,
             autoIncrement: true,
         },
-        business: {
+        location: {
             type: DataTypes.STRING(100),
         },
         stars: {
