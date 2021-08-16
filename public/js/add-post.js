@@ -6,9 +6,9 @@ const addFormHandler = async (event) => {
     const entertainment = document.querySelector('#entertainment').value.trim();
     const specials = document.querySelector('#specials').value.trim();
     const quality = document.querySelector('#quality').value.trim();
-    const addComment = document.querySelector('#comment').value;
-  
-    if (crowded && masks && entertainment && specials && quality && addComment) {
+    const addComment = document.querySelector('#comments').value.trim();
+   console.log(addComment);
+    if (crowded || masks || entertainment || specials || quality || addComment) {
       const response = await fetch('/api/posts', {
         method: 'POST',
         body: JSON.stringify({ crowded, masks, entertainment, specials, quality, addComment }),

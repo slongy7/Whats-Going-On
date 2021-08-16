@@ -37,11 +37,11 @@ Post.init(
         //         key: 'id',
         //     }
         // },
-        // userId: {
-        //     type: DataTypes.INTEGER(100),
+        // user_Id: {
+        //     type: DataTypes.INTEGER,
         //     allowNull: false,
         //     references: {
-        //         model: 'USER',
+        //         model: 'user',
         //         key: 'id',
         //     }
         // },
