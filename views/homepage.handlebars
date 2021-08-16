@@ -11,15 +11,14 @@
 </head>
 
 <body>
-    <main style="display:flex; flex-direction:row;">
-        <div style="flex-grow: 2;">
-            {{#each businesses as |business|}}
 
-            {{> business-info business }}
+    {{#each businesses as |business|}}
+
+    {{> business-info business }}
 
 
-            {{else}}
-            <a href="/"><button href="/" class="btn" style="border: 0;
+    {{else}}
+    <a href="/"><button href="/" class="btn" style="border: 0;
     background-color: whitesmoke;
     padding: 1%;
     font-weight: bold;
@@ -28,13 +27,8 @@
     cursor: pointer;
     border-radius: 5px;
     margin: 2px;"><i class="fa fa-glass-cheers"></i>See Businesses</button></a>
-            {{/each}}
-        </div>
-        {{#each posts as |post|}}
+    {{/each}}
 
-            {{> post-info post }}
-        {{/each}}
-    </main>
 </body>
 
 
