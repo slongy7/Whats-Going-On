@@ -6,7 +6,7 @@
       "specials": "yes",
       "quality": 4,
       "addComment": "great happy hour!",
-      "business": "Sacred Palm"
+      "location": "Sacred Palm"
     },
 
     {
@@ -16,7 +16,7 @@
         "specials": "no",
         "quality": 5,
         "addComment": "love their beer!",
-        "business": "Terrace Bar"
+        "location": "Terrace Bar"
       },
 
       {
@@ -26,7 +26,7 @@
         "specials": "yes",
         "quality": 3,
         "addComment": "great atmosphere",
-        "business": "The Alibi Bourbon and Cocktail Lounge"
+        "location": "The Alibi Bourbon and Cocktail Lounge"
       },
 
       {
@@ -36,7 +36,7 @@
         "specials": "no",
         "quality": 3,
         "addComment": "love their food!",
-        "business": "High Bank Distillery"
+        "location": "High Bank Distillery"
       },
       {
         "crowded": "Crowded",
@@ -45,6 +45,6 @@
         "specials": "Yes",
         "quality": 4,
         "addComment": "the best cocktails!",
-        "business": "Two Truths"
+        "location": "Two Truths"
       }
     ]
