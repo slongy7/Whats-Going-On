@@ -10,4 +10,15 @@ const Post = require('./post');
 //     foreignKey: 'user_id',
 // });
 
+Business.hasMany(Post, {
+    foreignKey: 'bus_id',
+});
+
+Post.belongsTo(Business, {
+    foreignKey: 'bus_id',
+});
+
+
+
+
 module.exports = { User, Business, Post };

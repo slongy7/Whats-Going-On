@@ -29,14 +29,14 @@ Post.init(
         addComment: {
             type: DataTypes.STRING(100),
         },
-        // busId: {
-        //     type: DataTypes.STRING(100),
-        //     allowNull: false,
-        //     references: {
-        //         model: 'BUSINESS',
-        //         key: 'id',
-        //     }
-        // },
+        busId: {
+            type: DataTypes.STRING(100),
+            allowNull: false,
+            references: {
+                model: 'BUSINESS',
+                key: 'id',
+            }
+        }
         // user_Id: {
         //     type: DataTypes.INTEGER,
         //     allowNull: false,
