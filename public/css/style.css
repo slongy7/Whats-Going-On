@@ -40,7 +40,12 @@ ul {
     list-style: inside;
 }
 
-#login {
+.row {
+    text-align: center;
+    list-style: inside;
+}
+
+#post {
     text-align: center;
     list-style: inside;
 }
