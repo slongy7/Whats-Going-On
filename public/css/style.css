@@ -21,6 +21,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
     float: right; 
+    margin: 2px;
 }
 
 #list {
@@ -73,6 +74,21 @@ ul {
     text-shadow: -1px 2px 2px #1C6EA4;
     
 
+}
+#add-post-container {
+  align-content: center;
+  max-width: 600px;
+  text-align: center;
+}
+.add-form {
+  margin: auto;
+  background-color: var(--green);
+  width: fit-content;
+  font-size: 17px;
+}
+
+label {
+  margin: 10px;
 }
 
 header {
@@ -133,3 +149,7 @@ footer {
     font-weight:600
   }
   
+  .form-select {
+    min-width: 80%;
+    min-height: 30px;
+  }
