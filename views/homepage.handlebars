@@ -11,9 +11,20 @@
 </head>
 
 <body>
-    <button type="button" class="btn btn-primary btn-lg"><a href="/login">Log-In</a></button>
+    <button id='btn' type="button" class="btn btn-primary btn-lg"><a href="/login">Log-In</a></button>
 
-    <h1 id='hello'>Hello Marvin</h1>
+    <h1 id='hello'>Business</h1>
+
+    <div id='list'>
+    <ul class='location'>
+        {{ location }}
+        <li>{{ name }}</li>
+        <li>{{ address }}</li>
+        <li>{{ zip }}</li>
+        <li>{{ city }}</li>
+        <li>{{ category }}</li>
+    </ul>
+    </div>
 
 </body>
 

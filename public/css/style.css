@@ -11,14 +11,67 @@ body {
     background-color: var(--powder);
 }
 
+#btn {
+    border: 0;
+    background-color: whitesmoke;
+    padding: 1%;
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right; 
+}
+
+#list {
+    border-bottom: 2px solid var(--scarlet);
+    border-top: 2px solid var(--scarlet);
+    text-align: center;
+    list-style: inside;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#hello {
+    text-align: center;
+    list-style: inside;
+}
+
+#login {
+    text-align: center;
+    list-style: inside;
+}
+
+#signup {
+    text-align: center;
+    list-style: inside;
+}
+
+#location {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #logo {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-    display flex;
-    justify-content: center;
 
+    font-family: Georgia, serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    word-spacing: 2px;
+    color: #FFBE86;
+    font-weight: 700;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-align: center;
+    text-shadow: -1px 2px 2px #1C6EA4;
+    
 
-
-   
 }
 
 header {
@@ -31,8 +84,51 @@ header {
 
 footer {
     border-top: 1px solid #ccc;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     padding: 1%;
-    font-size: 110%;
+    font-size: 150%;
+    margin-bottom: 0;
+    
   }
+
+  #mail {
+      display: flex;
+      justify-content: right;
+  }
+
+  .social-icons {
+      text-align: center;
+  }
+
+  .social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+
+.social-icons li
+{
+    display:inline-block;
+    margin-bottom:4px
+  }
+
+  .social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+
+
+
+    .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+  
