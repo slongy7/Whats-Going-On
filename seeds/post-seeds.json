@@ -1,0 +1,41 @@
+[
+    {
+      "username": "ironman",
+      "crowded": "Crowded",
+      "masks": "No Masks",
+      "entertainment": "yes",
+      "specials": "yes",
+      "quality": 4,
+      "addComment": "great happy hour!"
+    },
+
+    {
+        "username": "hulk",
+        "crowded": "Not Crowded",
+        "masks": "Masks",
+        "entertainment": "yes",
+        "specials": "no",
+        "quality": 5,
+        "addComment": "love their beer!"
+      },
+
+      {
+        "username": "CapA",
+        "crowded": "Crowded",
+        "masks": "Masks",
+        "entertainment": "no",
+        "specials": "yes",
+        "quality": 3,
+        "addComment": "great atmosphere"
+      },
+
+      {
+        "username": "Bwidow",
+        "crowded": "Crowded",
+        "masks": "Masks",
+        "entertainment": "no",
+        "specials": "no",
+        "quality": 3,
+        "addComment": "love their food!"
+      }
+    ]
