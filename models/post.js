@@ -11,6 +11,12 @@ Post.init(
             primaryKey: true,
             autoIncrement: true,
         },
+        business: {
+            type: DataTypes.STRING(100),
+        },
+        stars: {
+            type: DataTypes.INTEGER,
+        },
         crowded: {
             type: DataTypes.STRING,
         },
@@ -23,8 +29,8 @@ Post.init(
         specials: {
             type: DataTypes.STRING(100),
         },
-        quality : {
-            type: DataTypes.INTEGER,
+        quality: {
+            type: DataTypes.STRING,
         },
         addComment: {
             type: DataTypes.STRING(100),
