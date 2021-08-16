@@ -12,6 +12,32 @@
 <body>
   <div id='add-post-container'>
     <form class="add-form">
+
+      <div>
+        <label>Which business?</label>
+      </div>
+      <select class="form-select" id="location">
+        <option value=null>---Choose Option----</option>
+        <option>Terrace Bar</option>
+        <option>Sacred Palm</option>
+        <option>Two Truths</option>
+        <option>High Bank Distillery</option>
+        <option>The Alibi Bourbon and Cocktail Lounge</option>
+      </select>
+
+      <div>
+        <label>Stars?</label>
+      </div>
+      <select class="form-select" id="stars">
+        <option value=null>---Choose Option----</option>
+        <option>5</option>
+        <option>4</option>
+        <option>3</option>
+        <option>2</option>
+        <option>1</option>
+        <option>0</option>
+      </select>
+
       <div>
         <label>Is this location crowded?</label>
       </div>
@@ -63,7 +89,8 @@
       <br></br>
 
       <div class="form-floating">
-        <textarea id='comments' class="form-control" placeholder="Comments" style="width: 80%; height: 75px; margin:auto;"></textarea>
+        <textarea id='comments' class="form-control" placeholder="Comments"
+          style="width: 80%; height: 75px; margin:auto;"></textarea>
         <label for="floatingTextarea"></label>
         <div class="add-post">
           <button type="submit" class="btn btn-primary btn-lg" style="background-color: #FFBE86;
