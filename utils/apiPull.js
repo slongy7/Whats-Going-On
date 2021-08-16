@@ -6,22 +6,7 @@ const { Business } = require('../models/index');
 
 let apiKey = process.env.API_KEY;
 
-// router.post('/', (req, res) => {
-//     // Use Sequelize's `create()` method to add a row to the table
-//     // Similar to `INSERT INTO` in plain SQL
-//     Book.create({
-//       title: req.body.title,
-//       author: req.body.author,
-//       is_paperback: true
-//     })
-//       .then((newBook) => {
-//         // Send the newly created row as a JSON object
-//         res.json(newBook);
-//       })
-//       .catch((err) => {
-//         res.json(err);
-//       });
-//   });
+
 // REST
 let yelpREST = axios.create({
   baseURL: "https://api.yelp.com/v3/",
@@ -31,6 +16,7 @@ let yelpREST = axios.create({
   },
 })
 
+//function to do api data pull for businesses
 const findRestList = (userLocation, categorySelection) => {
     console.log('SEARCHING::');
     yelpREST('/businesses/search', { 
@@ -46,8 +32,7 @@ const findRestList = (userLocation, categorySelection) => {
         //   console.log('ENTER LOCATION::' + b);
         //   const busName = b.name; 
         //   const busClosed= b.is_closed;
-        const displayAddress = b.location.display_address[0] + ' /n' + b.location.display_address[1];
-        //   const busAddress = b.location; //includes display address, city, and zip
+        const displayAddress = b.location.display_address[0] + '\n' + b.location.display_address[1];
             
                 Business.create({
                 id: b.id,
@@ -57,7 +42,11 @@ const findRestList = (userLocation, categorySelection) => {
                 zip: b.location.zip_code,
                 category: categorySelection,
                 phone: b.display_phone,
-                isOpen: b.is_closed
+                isOpen: b.is_closed,
+                url: b.url,
+                phone: b.display_phone,
+                image: b.image_url,
+                link: b.url
             }).then((newBusiness) => {
                console.log(newBusiness);
             //    res.json(newBusiness);

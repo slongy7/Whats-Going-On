@@ -9,6 +9,7 @@
 
 body {
     background-color: var(--powder);
+    padding: 15px;
 }
 
 #btn {
@@ -20,17 +21,18 @@ body {
     cursor: pointer;
     border-radius: 5px;
     float: right; 
+    margin: 2px;
 }
 
 #list {
-    border-bottom: 2px solid var(--scarlet);
-    border-top: 2px solid var(--scarlet);
-    text-align: center;
-    list-style: inside;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  text-align: center;
+  list-style: inside;
+  margin: 0;
+  padding: 0;
+}
 
+ul {
+  list-style-type: none;
 }
 
 #hello {
@@ -77,6 +79,21 @@ body {
     text-shadow: -1px 2px 2px #1C6EA4;
     
 
+}
+#add-post-container {
+  align-content: center;
+  max-width: 600px;
+  text-align: center;
+}
+.add-form {
+  margin: auto;
+  background-color: var(--green);
+  width: fit-content;
+  font-size: 17px;
+}
+
+label {
+  margin: 10px;
 }
 
 header {
@@ -137,3 +154,7 @@ footer {
     font-weight:600
   }
   
+  .form-select {
+    min-width: 80%;
+    min-height: 30px;
+  }

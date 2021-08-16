@@ -11,23 +11,23 @@
 </head>
 
 <body>
-    <button id='btn' type="button" class="btn btn-primary btn-lg"><a href="/login">Log-In</a></button>
 
-    <h1 id='hello'>Business</h1>
+    {{#each businesses as |business|}}
 
-    <div id='list'>
-    <ul class='location'>
-        {{ location }}
-        <li>{{ name }}</li>
-        <li>{{ address }}</li>
-        <li>{{ zip }}</li>
-        <li>{{ city }}</li>
-        <li>{{ category }}</li>
-        <button type="button" class="btn btn-primary btn-lg"><a href="/post">Post</a></button>
-    </ul>
-    </div>
+    {{> business-info business }}
+    
    
-
+    {{else}}
+    <a href="/"><button href="/" class="btn" style="border: 0;
+    background-color: whitesmoke;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 30px;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 2px;"><i class="fa fa-glass-cheers"></i>See Businesses</button></a>
+    {{/each}}
 </body>
 
 

@@ -1,68 +1,85 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/47199050e5.js" crossorigin="anonymous"></script>
-    <title>Whats Going On</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/47199050e5.js" crossorigin="anonymous"></script>
+  <title>Whats Going On</title>
 </head>
 
 <body>
-<form id='post' class="add-form">
-<div>
-<label>Is this location crowded?</label>
-</div>
-<select class="form-select" id="crowded" multiple aria-label="Is this location crowded?">
-  <option value="Crowded">Crowded</option>
-  <option value="Not Crowded">Not Crowded</option>
-</select>
+  <div id='add-post-container'>
+    <form class="add-form">
+      <div>
+        <label>Is this location crowded?</label>
+      </div>
+      <select class="form-select" id="crowded">
+        <option value=null>---Choose Option----</option>
+        <option>Crowded</option>
+        <option>Not Crowded</option>
+      </select>
 
-<div>
-<label>Are people wearing masks?</label>
-</div>
-<select id='masks' class="form-select" multiple aria-label="Are people wearing masks?">
-  <option value="Masks">Masks</option>
-  <option value="No Masks">No Masks</option>
-</select>
+      <hr style='width:150px; background-color:#545F66 border: none;'>
 
-<div>
-<label>Is there live entertainment?</label>
-</div>
-<select id='entertainment' class="form-select" multiple aria-label="Is there live entertainment?">
-  <option value="Yes">Yes</option>
-  <option value="No">No</option>
-</select>
+      <div>
+        <label>Are people wearing masks?</label>
+      </div>
+      <select id='masks' class="form-select multiple" aria-label="Are people wearing masks?">
+        <option value=null>---Choose Option----</option>
+        <option>Masks</option>
+        <option>No Masks</option>
+      </select>
+      <hr style='width:150px; background-color:#545F66 border: none;'>
+      <div>
+        <label>Is there live entertainment?</label>
+      </div>
+      <select id='entertainment' class="form-select multiple" aria-label="Is there live entertainment?">
+        <option value=null>---Choose Option----</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+      <hr style='width:150px; background-color:#545F66 border: none;'>
+      <div>
+        <label>Are there food and drink specials?</label>
+      </div>
+      <select id='specials' class="form-select multiple" aria-label="Are there food and drink specials?">
+        <option value=null>---Choose Option----</option>
+        <option>Yes</option>
+        <option>No</option>
+      </select>
+      <hr style='width:150px; background-color:#545F66 border: none;'>
+      <div>
+        <label>Are the restrooms clean?</label>
+      </div>
+      <select id='quality' class="form-select multiple" aria-label="Are the restrooms clean?">
+        <option value=null>---Choose Option----</option>
+        <option>Yes</option>
+        <option>Moderately</option>
+        <option>No</option>
+      </select>
 
-<div>
-<label>Are there food and drink specials?</label>
-</div>
-<select id='specials' class="form-select" multiple aria-label="Are there food and drink specials?">
-  <option value="Yes">Yes</option>
-  <option value="No">No</option>
-</select>
+      <br></br>
 
-<div>
-<label>Are the restrooms clean?</label>
-</div>
-<select id='quality' class="form-select" multiple aria-label="Are the restrooms clean?">
-  <option value="Yes">Yes</option>
-  <option value="Moderately">Moderately</option>
-  <option value="No">No</option>
-</select>
-
-<br></br>
-
-<div class="form-floating">
-  <textarea id='comments' class="form-control" placeholder="Comments"></textarea>
-  <label for="floatingTextarea"></label>
-    <div class="add-post">
-  <button type="submit" class="btn btn-primary btn-lg"><a>Make a Post</a></button>
-    </div>
-</div>
+      <div class="form-floating">
+        <textarea id='comments' class="form-control" placeholder="Comments" style="width: 80%; height: 75px; margin:auto;"></textarea>
+        <label for="floatingTextarea"></label>
+        <div class="add-post">
+          <button type="submit" class="btn btn-primary btn-lg" style="background-color: #FFBE86;
+  border: none;
+  padding: 8px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;">Make a Post</button>
+        </div>
+      </div>
     </form>
-
+  </div>
 </body>
 
 <script src="../js/add-post.js"></script>
