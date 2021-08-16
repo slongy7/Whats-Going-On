@@ -11,6 +11,49 @@ body {
     background-color: var(--powder);
 }
 
+#btn {
+    border: 0;
+    background-color: whitesmoke;
+    padding: 1%;
+    font-weight: bold;
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: 5px;
+    float: right; 
+}
+
+#list {
+    border-bottom: 2px solid var(--scarlet);
+    border-top: 2px solid var(--scarlet);
+    text-align: center;
+    list-style: inside;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+#hello {
+    text-align: center;
+    list-style: inside;
+}
+
+#login {
+    text-align: center;
+    list-style: inside;
+}
+
+#signup {
+    text-align: center;
+    list-style: inside;
+}
+
+#location {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #logo {
 
     font-family: Georgia, serif;
