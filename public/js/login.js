@@ -1,9 +1,6 @@
 const loginFormHandler = async (event) => {
   event.preventDefault();
 
-
-
-  
   const email = document.querySelector('#email-login').value.trim();
   const password = document.querySelector('#password-login').value.trim();
 
@@ -22,8 +19,6 @@ const loginFormHandler = async (event) => {
   }
 };
 
-  //const jsonfile = require('jsonfile');
-
   const signupFormHandler = async (event) => {
   event.preventDefault();
   const first_name = document.querySelector('#first-name-signup').value.trim();
@@ -32,14 +27,6 @@ const loginFormHandler = async (event) => {
   const email = document.querySelector('#email-signup').value.trim();
   const pw = document.querySelector('#password-signup').value.trim();
   
-
-  // // jsonfile.writeFile('/seeds/userData.json', {
-  //   firstname: firstname,
-  //   lastname: lastname,
-  //   username: username,
-  //   email: email,
-  //   password: password
-  // });
 
   if (first_name && last_name && username && email && pw) {
     const response = await fetch('/api/users', {
