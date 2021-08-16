@@ -12,6 +12,13 @@ body {
     padding: 15px;
 }
 
+.add-form {
+    text-align: center;
+  list-style: inside;
+  margin: 0;
+  padding: 0;
+}
+
 #btn {
     border: 0;
     background-color: whitesmoke;
@@ -40,19 +47,40 @@ ul {
     list-style: inside;
 }
 
-.row {
-    text-align: center;
-    list-style: inside;
+.btn {
+background-color: #FFBE86;
+  border: none;
+  padding: 8px 36px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
 }
 
-#post {
-    text-align: center;
-    list-style: inside;
+
+
+#login {
+    color: whitesmoke;
+    margin: auto;
+    background-color: var(--gray);
+    width: fit-content;
+    font-size: 17px;
+    align-content: center;
+  text-align: center;
 }
 
 #signup {
-    text-align: center;
-    list-style: inside;
+    align-content: center;
+  text-align: center;
+  color: whitesmoke;
+    margin: auto;
+    background-color: var(--gray);
+    width: fit-content;
+    font-size: 17px;
+    
 }
 
 #location {
@@ -80,16 +108,18 @@ ul {
     
 
 }
+
 #add-post-container {
   align-content: center;
-  max-width: 600px;
   text-align: center;
 }
+
 .add-form {
   margin: auto;
   background-color: var(--green);
   width: fit-content;
   font-size: 17px;
+  
 }
 
 label {
