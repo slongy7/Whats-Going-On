@@ -1,4 +1,5 @@
 What's Going On?
+
 By Celina Lind, Justin Long, Bo Vari, David Jost
 
 ## Description
@@ -10,6 +11,8 @@ APIs: Yelp...
 ## Bugs
 
 ## Images
+![83339AC1-2270-44CE-9B0F-DA713060BA84](https://user-images.githubusercontent.com/79759725/129624726-2b23c3de-60ee-4247-9819-efe60160d9c9.png)
+
 
 
 
