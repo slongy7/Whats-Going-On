@@ -24,7 +24,7 @@ Post.init(
             type: DataTypes.STRING(100),
         },
         quality : {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
         },
         addComment: {
             type: DataTypes.STRING(100),
