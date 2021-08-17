@@ -23,7 +23,7 @@ const findRestList = (userLocation, categorySelection) => {
         params: { 
             location : userLocation, //user city input
             term: categorySelection, //maintain bar term for specificity
-            limit: 5  //choose limit
+            limit: 12  //choose limit
         } 
     }).then(({ data }) => {
         console.log(data);
