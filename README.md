@@ -6,9 +6,30 @@ By Celina Lind, Justin Long, Bo Vari, David Jost
 What's Going On? is an app designed to allow users to search for restaurants and bars in their area, and have it provide them with additional information.  This information includes if it is crowded or not, if people are wearing masks, if there is entertainment, if there are food and drink specials, and if the restrooms are clean.
 
 ## Technologies Used:
-APIs: Yelp...
+APIs: Yelp Fusion
+Packages: 
+Axios
+Bcrypt
+Bcryptis
+Body-parser
+Connect-session-sequelize
+Dotenv
+Express
+Express-handlebars
+Express-session
+Express-static
+Handlebars
+Jsonfile
+Mysql2
+Path
+Sequelize
+
 
 ## Bugs
+Having our inputs entered into the database
+Issues with routes working correctly
+Connecting to models
+Deploying to Heroku
 
 ## Images
 ![83339AC1-2270-44CE-9B0F-DA713060BA84](https://user-images.githubusercontent.com/79759725/129624726-2b23c3de-60ee-4247-9819-efe60160d9c9.png)
@@ -17,7 +38,7 @@ APIs: Yelp...
 
 
 ## Deployed URL:
-https://dashboard.heroku.com/apps/blooming-brook-56993
+https://limitless-sierra-43236.herokuapp.com/
 
 ## GitHub Repository
 https://github.com/slongy7/project_2
